@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+  <h1> <%= kindOfDay %> </h1>
+
+  <ul>
+    <% for(var i= 0 ; i< newListItems.length ;i ++){  %>
+        <li> <%= newListItems[i] %></li>
+    <% } %>
+  </ul>
+
+  <form method="post" action="/">
+    <label for="newItem">Add todo </label>
+    <input type="text" id="newItem" name="newTodo" placeholder="Enter Todo" required>
+    <button type="submit">Add Todo</button>
+  </form>
+  
+</body>
+</html>
